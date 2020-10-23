@@ -154,6 +154,6 @@ def convert():
 Convert_Button = Button(text = "Convert",bg = 'white',fg = 'black',font = "size 15",pady = 0,command = convert)
 Convert_Button.grid(column = 1,rows = 5)
 
-root.mainloop()#Makes a loop which keeps on running unti the user clickes the cross button on the window
+root.mainloop()#Makes a loop which keeps on executing the above program until the user clickes the cross button on the window
 
 ####### Code Finishes Here ########
