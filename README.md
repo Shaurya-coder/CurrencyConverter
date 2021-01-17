@@ -7,5 +7,6 @@ Prerequisites:
 1.Basic Python Knowledge(Functions,Data types,conditionals)
 2.Basic Tkinter knowledge
 
-![image](https://user-images.githubusercontent.com/70806988/104850810-41eb6d80-5917-11eb-9a40-dcd037d4be21.png)
+<img src="https://user-images.githubusercontent.com/70806988/104850810-41eb6d80-5917-11eb-9a40-dcd037d4be21.png" width="48">
+
 
