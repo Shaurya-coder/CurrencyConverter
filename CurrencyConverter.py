@@ -9,20 +9,22 @@ root = Tk()#root is the name of the main window you caan also name it main,maste
 
 root.title("Currency Converter")#Title of Window
 
+root.config(bg="sky blue")
+
 root.geometry('450x400')#Dimensions of Window
 
 #Step2
 # Writing Title Label and other labels in window to serve as a reference to textbox.
-Title_label=Label(root,text = "Currency Converter",font = 'comicsansms 30 bold',pady = 5)#Making a Label#.grid(row = 0,column = 1 )
+Title_label=Label(root,text = "Currency Converter",bg="sky blue",font = 'comicsansms 30 bold',pady = 5)#Making a Label#.grid(row = 0,column = 1 )
 Title_label.grid(row = 0,column = 1)#griding the label to a place
 
-From_currency = Label(root,text = "From",font = 'size 15 ',pady = 5)
+From_currency = Label(root,text = "From",font = 'size 15 ',bg="sky blue",pady = 5)
 From_currency.grid()
 
-To_currency = Label(root,text = "To",font = "size 15",pady = 5 )
+To_currency = Label(root,text = "To",bg="sky blue",font = "size 15",pady = 5 )
 To_currency.grid()
 
-Amount = Label(root,text ="Amount",font = "size 15",pady = 5)
+Amount = Label(root,text ="Amount",bg="sky blue",font = "size 15",pady = 5)
 Amount.grid()
 #Note:- You can not use grid and pack in the same code file.
 
@@ -144,14 +146,14 @@ def convert():
 
     rates = float('{:.3f}'.format(rates))#To Limit the decimal places of rates to 3
 
-    Response_label=Label(root,text = f'{rates} {To_value.get()}',font = 'comicsansms 15 bold',pady = 5)
+    Response_label=Label(root,text = f'{rates} {To_value.get()}',font = 'comicsansms 15 bold',bg="sky blue",pady = 5)
 
     Response_label.grid(row = 20,column = 1)
 
 #Step8
 # Making a button and inserting the convert function into it. 
 
-Convert_Button = Button(text = "Convert",bg = 'white',fg = 'black',font = "size 15",pady = 0,command = convert)
+Convert_Button = Button(text = "Convert",bg = 'sky blue',fg = 'black',font = "size 15",pady = 0,command = convert)
 Convert_Button.grid(column = 1,rows = 5)
 
 root.mainloop()#Makes a loop which keeps on executing the above program until the user clickes the cross button on the window
